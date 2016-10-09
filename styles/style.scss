@@ -1,0 +1,53 @@
+$box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+$dark-gray: #333;
+
+div.container-fluid {
+  color: #333;
+  .hidden {
+    display: none;
+  }
+
+  .center {
+    text-align: center;
+  }
+  .icon {
+    padding: 0;
+  }
+  width: 100%;
+  box-shadow: $box-shadow-bottom-only;
+
+  div.title {
+    background: #eee;
+  }
+  div.header {
+        padding: 10px 0 10px;
+        background-color: #ddd;
+        border-top: 1px solid $dark-gray;
+        border-bottom: solid 1px $dark-gray;
+        span {
+          font-weight: bold;
+        }
+    }
+
+  div.all-tasks {
+    background-color: #fff;
+
+    .new-task {
+    padding: 10px 0 10px;
+    border-bottom: solid 1px $dark-gray;
+      input {
+          width: 80%;
+      }
+    }
+    .saved-task {
+    @extend .new-task;
+    border-top: solid 1px $dark-gray;
+    border-bottom: solid 1px $dark-gray;
+    }
+
+  }
+  .btn-info {
+    width: 100%;
+  }
+
+}
