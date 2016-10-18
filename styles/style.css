@@ -1,7 +1,21 @@
+.assigned-icon {
+  width: 20px;
+  height: 20px; }
+
+.col-title {
+  font-style: bold;
+  font-color: #f25a4c; }
+
 div.container-fluid {
+  font-family: 'Karla', sans-serif;
   color: #333;
   width: 100%;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2); }
+  div.container-fluid .home-icon {
+    padding-top: 7px;
+    padding-bottom: 7px; }
+  div.container-fluid span {
+    font-size: 1em; }
   div.container-fluid .hidden {
     display: none; }
   div.container-fluid .center {
@@ -12,21 +26,16 @@ div.container-fluid {
     background: #eee; }
   div.container-fluid div.header {
     padding: 10px 0 10px;
-    background-color: #ddd;
-    border-top: 1px solid #333;
-    border-bottom: solid 1px #333; }
+    border-bottom: solid 2px #333; }
     div.container-fluid div.header span {
       font-weight: bold; }
   div.container-fluid div.all-tasks {
     background-color: #fff; }
-    div.container-fluid div.all-tasks .new-task, div.container-fluid div.all-tasks .saved-task {
+    div.container-fluid div.all-tasks #new-task, div.container-fluid div.all-tasks #seed-task, div.container-fluid div.all-tasks .task-row {
       padding: 10px 0 10px;
-      border-bottom: solid 1px #333; }
-      div.container-fluid div.all-tasks .new-task input, div.container-fluid div.all-tasks .saved-task input {
+      border-bottom: solid 1px #eee; }
+      div.container-fluid div.all-tasks #new-task input, div.container-fluid div.all-tasks #seed-task input, div.container-fluid div.all-tasks .task-row input {
         width: 80%; }
-    div.container-fluid div.all-tasks .saved-task {
-      border-top: solid 1px #333;
-      border-bottom: solid 1px #333; }
   div.container-fluid .btn-info {
     width: 100%; }
 

@@ -1,8 +1,36 @@
 $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 $dark-gray: #333;
+$light-gray: #eee;
+$accent-coral: #f25a4c;
+
+.assigned-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.col-title {
+  font-style: bold;
+  font-color: #f25a4c;
+}
 
 div.container-fluid {
-  color: #333;
+
+
+  font-family: 'Karla', sans-serif;
+  color: $dark-gray;
+  width: 100%;
+  box-shadow: $box-shadow-bottom-only;
+
+
+  .home-icon {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  span {
+    font-size: 1em;
+  }
+
   .hidden {
     display: none;
   }
@@ -10,20 +38,18 @@ div.container-fluid {
   .center {
     text-align: center;
   }
+
   .icon {
     padding: 0;
   }
-  width: 100%;
-  box-shadow: $box-shadow-bottom-only;
 
   div.title {
-    background: #eee;
+    background: $light-gray;
   }
   div.header {
         padding: 10px 0 10px;
-        background-color: #ddd;
-        border-top: 1px solid $dark-gray;
-        border-bottom: solid 1px $dark-gray;
+        // background-color: #ddd;
+        border-bottom: solid 2px $dark-gray;
         span {
           font-weight: bold;
         }
@@ -32,17 +58,12 @@ div.container-fluid {
   div.all-tasks {
     background-color: #fff;
 
-    .new-task {
+    #new-task, #seed-task, .task-row {
     padding: 10px 0 10px;
-    border-bottom: solid 1px $dark-gray;
+    border-bottom: solid 1px $light-gray;
       input {
           width: 80%;
       }
-    }
-    .saved-task {
-    @extend .new-task;
-    border-top: solid 1px $dark-gray;
-    border-bottom: solid 1px $dark-gray;
     }
 
   }
