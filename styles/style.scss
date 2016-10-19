@@ -1,11 +1,26 @@
 $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-$dark-gray: #333;
 $light-gray: #eee;
+$medium-gray: #979797;
+$dark-gray: #333;
 $accent-coral: #f25a4c;
+$accent-purple: #7D6BBF;
+$light-purple: #A394D1;
+
+
+.nav {
+    background-color: #eee;
+}
+
+.clicked-fav {
+  color: yellow !important;
+  background-color: $medium-gray;
+  border-radius: 5em;
+}
 
 .assigned-icon {
-  width: 20px;
-  height: 20px;
+  width: 1.2em;
+  height: 1.2em;
+  padding: .1em;
 }
 
 .col-title {
@@ -15,16 +30,37 @@ $accent-coral: #f25a4c;
 
 div.container-fluid {
 
+  .seed2 {
+    background-color: #fcfcfc;
+  }
 
   font-family: 'Karla', sans-serif;
   color: $dark-gray;
   width: 100%;
   box-shadow: $box-shadow-bottom-only;
 
+  .info-row {
+    text-align: center;
+    @extend #seed-task;
+    // background-color: $light-gray;
+    border-top: solid 1px $light-gray;
+
+    .glyphicon {
+      color: $medium-gray;
+      margin-left: 2.5em;
+      margin-right: 2.5em;
+      font-size: 1.2em;
+      padding: .1em;
+    }
+    .glyphicon:hover {
+      color: $accent-purple;
+    }
+  }
 
   .home-icon {
     padding-top: 7px;
     padding-bottom: 7px;
+    padding-left: 10px;
   }
 
   span {
@@ -46,29 +82,49 @@ div.container-fluid {
   div.title {
     background: $light-gray;
   }
+
   div.header {
         padding: 10px 0 10px;
-        // background-color: #ddd;
         border-bottom: solid 2px $dark-gray;
         span {
           font-weight: bold;
+          color: $accent-purple;
         }
     }
+
+  h4:hover, .txtToInputNew:hover, .new-task:hover, #seed-task:hover {
+    color: $medium-gray;
+  }
 
   div.all-tasks {
     background-color: #fff;
 
-    #new-task, #seed-task, .task-row {
+    .info-row {
+      border-bottom: 2px solid $light-purple;
+      padding: 50px 0 5px;
+    }
+
+    .new-task, #seed-task, .task-row {
     padding: 10px 0 10px;
-    border-bottom: solid 1px $light-gray;
+
+
       input {
           width: 80%;
       }
     }
-
   }
+
+  .new-task:nth-child(even) {
+    background: #fcfcfc;
+  }
+
   .btn-info {
     width: 100%;
+    background-color: $accent-purple;
+    border-color: $accent-purple;
   }
-
+  .btn-info:hover {
+    background-color: $light-purple;
+    border-color: $light-purple;
+  }
 }

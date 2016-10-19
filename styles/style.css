@@ -1,6 +1,15 @@
+.nav {
+  background-color: #eee; }
+
+.clicked-fav {
+  color: yellow !important;
+  background-color: #979797;
+  border-radius: 5em; }
+
 .assigned-icon {
-  width: 20px;
-  height: 20px; }
+  width: 1.2em;
+  height: 1.2em;
+  padding: .1em; }
 
 .col-title {
   font-style: bold;
@@ -11,9 +20,23 @@ div.container-fluid {
   color: #333;
   width: 100%;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2); }
+  div.container-fluid .seed2 {
+    background-color: #fcfcfc; }
+  div.container-fluid .info-row {
+    text-align: center;
+    border-top: solid 1px #eee; }
+    div.container-fluid .info-row .glyphicon {
+      color: #979797;
+      margin-left: 2.5em;
+      margin-right: 2.5em;
+      font-size: 1.2em;
+      padding: .1em; }
+    div.container-fluid .info-row .glyphicon:hover {
+      color: #7D6BBF; }
   div.container-fluid .home-icon {
     padding-top: 7px;
-    padding-bottom: 7px; }
+    padding-bottom: 7px;
+    padding-left: 10px; }
   div.container-fluid span {
     font-size: 1em; }
   div.container-fluid .hidden {
@@ -28,15 +51,27 @@ div.container-fluid {
     padding: 10px 0 10px;
     border-bottom: solid 2px #333; }
     div.container-fluid div.header span {
-      font-weight: bold; }
+      font-weight: bold;
+      color: #7D6BBF; }
+  div.container-fluid h4:hover, div.container-fluid .txtToInputNew:hover, div.container-fluid .new-task:hover, div.container-fluid #seed-task:hover, div.container-fluid .info-row:hover {
+    color: #979797; }
   div.container-fluid div.all-tasks {
     background-color: #fff; }
-    div.container-fluid div.all-tasks #new-task, div.container-fluid div.all-tasks #seed-task, div.container-fluid div.all-tasks .task-row {
-      padding: 10px 0 10px;
-      border-bottom: solid 1px #eee; }
-      div.container-fluid div.all-tasks #new-task input, div.container-fluid div.all-tasks #seed-task input, div.container-fluid div.all-tasks .task-row input {
+    div.container-fluid div.all-tasks .info-row {
+      border-bottom: 2px solid #A394D1;
+      padding: 50px 0 5px; }
+    div.container-fluid div.all-tasks .new-task, div.container-fluid div.all-tasks #seed-task, div.container-fluid div.all-tasks .info-row, div.container-fluid div.all-tasks .task-row {
+      padding: 10px 0 10px; }
+      div.container-fluid div.all-tasks .new-task input, div.container-fluid div.all-tasks #seed-task input, div.container-fluid div.all-tasks .info-row input, div.container-fluid div.all-tasks .task-row input {
         width: 80%; }
+  div.container-fluid .new-task:nth-child(even) {
+    background: #fcfcfc; }
   div.container-fluid .btn-info {
-    width: 100%; }
+    width: 100%;
+    background-color: #7D6BBF;
+    border-color: #7D6BBF; }
+  div.container-fluid .btn-info:hover {
+    background-color: #A394D1;
+    border-color: #A394D1; }
 
 /*# sourceMappingURL=style.css.map */
